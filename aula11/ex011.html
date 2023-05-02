@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    Qual seu pais?<input type="text" name="ipais" id="ipais">
+    <input type="button" value="verificar" onclick="verificou()">
+    <div id="info">
+
+    </div>
+    <script>
+        function verificou () {
+            var pais = window.document.querySelector('input#ipais').value.toUpperCase()
+            var yourpais = window.document.querySelector('div#info')
+            yourpais.innerHTML = `Vocé nasceu no pais ${pais}`
+            if (pais == 'BRASIL') {
+                yourpais.innerHTML += ` Você é Brasileiro!!`
+            } else {
+                yourpais.innerHTML += ` Estrangeiro`
+            }
+           
+        }
+    </script>
+</body>
+</html>
