@@ -24,7 +24,13 @@ footer {
     text-align: center;
     font-style: italic;
 }
-
-div#res {
-    text-align: center;
+div, p#bot {
+ text-align: center;
 }
+ input#botao {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    
+    
+ }
