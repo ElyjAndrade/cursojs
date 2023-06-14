@@ -1,32 +1,40 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgba(23, 157, 157, 0.326);
-    font: normal 15pt arial;
+    background-color: rgba(67, 171, 236, 0.721);
+    font: normal 15pt Arial;
 }
 
 header {
+    color: white;
     text-align: center;
 }
 
 section {
     background-color: white;
-    width: 500px;
-    
+    border-radius: 5px;
     padding: 15px;
+    width: 500px;
     margin: auto;
-}
-
-div {
-    text-align: center;
-    padding: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.392);
 }
 
 select#flista {
     width: 150px;
-}    
+}
 
 footer {
+    color: white;
     text-align: center;
     font-style: italic;
 }
+div, p#bot {
+ text-align: center;
+}
+ input#botao {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    
+    
+ }
