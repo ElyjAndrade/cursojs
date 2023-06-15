@@ -40,8 +40,23 @@ function finalizar() {
         window.alert(`Adicione valores antes de finalizar!`)
     } else {
         var tot = valores.length 
-
+        var maior = valores[0]
+        var menor = valores[0]
+        var soma = 0
+        var media = 0
+        for(var pos in valores){
+            soma += valores[pos]
+            if(valores[pos] > maior)
+            maior = valores[pos]
+            if(valores[pos] < menor)
+            menor = valores[pos]
+        }
+        media = soma / tot
         res.innerHTML = ''
         res.innerHTML += `<p>Temos ${tot} números cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
+        res.innerHTML += `<p>Somando todos os valores, temos ${soma}.`
+        res.innerHTML += `<p>A mádia dos valores digitados é igual a ${media}.</p>`
     }
 }
